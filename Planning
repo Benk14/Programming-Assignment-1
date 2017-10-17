@@ -1,1 +1,23 @@
+Problem: Make a Program that finds the volume and the surface area of a given 3D shape and dimensions of the shape
 
+
+Prototype:
+What is your shape?
+Cube
+Thanks what is the length of the sides in cm?
+2
+The volume of the cube is 8cm^3 and the surface area is 24cm^2.
+Would you like to know the volume and surface area of another shape?
+Yes
+What is your shape?
+Triangular Prism
+What is the length of the larger rectangular side?
+4
+Thanks, what is the length of the smaller rectangular side?
+2
+Thanks, What is the height of the triangular side?
+4
+Thanks, The volume is 16cm^3 and the surface area is 32cm^2
+Would you like to know the volume and surface area of another shape?
+No
+Thanks have a good day!
