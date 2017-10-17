@@ -21,3 +21,14 @@ Thanks, The volume is 16cm^3 and the surface area is 32cm^2
 Would you like to know the volume and surface area of another shape?
 No
 Thanks have a good day!
+
+
+Pseudocode:
+1. Declare variables.
+2. Create a new scanner
+3. Begin main part of code asking for what shape the user wants uses an if statement/case statement to determine which method to use
+4. Jump to the proper shape within the if/case statement and then ask for all the required side lengths if a cube ask for 1, if a triangular prism ask for 3 etc
+5. When all the side lengths are input then run jump to the proper method to determine the surface area and volume
+6. Return values to the user
+7. Ask if the user wants to run the program again
+8. If the user answers yes then jump to step 3. If no then thank the user and then end the program.
