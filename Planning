@@ -1,5 +1,13 @@
 Problem: Make a Program that finds the volume and the surface area of a given 3D shape and dimensions of the shape
 
+Shapes:
+Cube
+Triangular Prism
+Rectangular Prism
+Square Pyramid
+Sphere
+Cylinder
+Conee
 
 Prototype:
 What is your shape?
