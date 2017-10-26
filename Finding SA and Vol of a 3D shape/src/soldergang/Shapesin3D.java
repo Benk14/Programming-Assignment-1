@@ -23,7 +23,7 @@ public class Shapesin3D{
         Scanner run= new Scanner(System.in);
         boolean Cont=true;
         do
-        {
+        { //asking and getting user for input on what shape they want to use
             System.out.println("Welcome to the volume and surface area calculator!");
             Scanner input = new Scanner(System.in);
             System.out.printf("What is the shape you would like to use? "+ "%n" + "1. Cube"+ "%n" + "2. Square Based Prism"+ "%n" +"3. Sphere"+ "%n" +"4. Cylinder" + "%n");
@@ -34,7 +34,7 @@ public class Shapesin3D{
             int shape = input.nextInt();
             Scanner side_1 = new Scanner(System.in);
             switch(shape){
-                
+                //determining what shape the user has chosen
                 case 1 :
                    
                     System.out.println("Since all sides of a cube are equal give me your 1 side length in cm please. ");
@@ -42,12 +42,14 @@ public class Shapesin3D{
                     side_1.next();
                     System.out.println("Invalid input try again. ");
                    }
+                    
+                    //creating new object and returning the SA and Volume
                     Cube cubething = new Cube(side_1.nextDouble());
                     System.out.printf("The Surface area of your cube is: " + "%.2f", cubething.getSurfaceArea());
                     System.out.printf("%n"+"The Volume of your cube is: "+ "%.2f", cubething.getVolume());
                     
                     
-                    
+                    //getting input if the user wants to rerun the program
                     System.out.printf("%n"+"would you like to run this again? "+ "%n" + " Yes"+ "%n" + " No"+ "%n");
                     while(!run.hasNext()){
                     run.next();
@@ -61,6 +63,8 @@ public class Shapesin3D{
                         Cont = false;
                     }
                 case 2:
+                    
+                    //creating new object and returning the SA and Volume
                     SquarePrism  prismthing = new SquarePrism ();
                     System.out.println("Give me the Long Side of your square please. ");
                     while(!side_1.hasNextDouble()){
@@ -78,7 +82,7 @@ public class Shapesin3D{
                     System.out.printf("The Surface area of your cube is: " + "%.2f", prismthing.getSurfaceArea());
                     System.out.printf("%n"+"The Volume of your cube is: "+ "%.2f", prismthing.getVolume());
                     
-                    
+                    //getting input if the user wants to rerun the program
                     System.out.printf("%n"+"would you like to run this again? "+ "%n" + " Yes"+ "%n" + " No"+ "%n");
                     while(!run.hasNext()){
                     run.next();
@@ -93,7 +97,7 @@ public class Shapesin3D{
                     }
                     
                 case 3: 
-                    
+                    //creating new object and returning the SA and Volume
                     System.out.println("Give me the radius of your sphere please. ");
                     while(!side_1.hasNextDouble()){
                     side_1.next();
@@ -103,7 +107,7 @@ public class Shapesin3D{
                     System.out.printf("The Surface area of your cube is: " + "%.2f", Spherething.getSurfaceArea());
                     System.out.printf("%n"+"The Volume of your cube is: "+ "%.2f", Spherething.getVolume());
                     
-                    
+                    //getting input if the user wants to rerun the program
                     System.out.printf("%n"+"would you like to run this again? "+ "%n" + " Yes"+ "%n" + " No"+ "%n");
                     while(!run.hasNext()){
                     run.next();
@@ -118,6 +122,8 @@ public class Shapesin3D{
                     }
                     
                 case 4:
+                    
+                    //creating new object and returning the SA and Volume
                     Cylinder  Cylthing = new Cylinder ();
                     System.out.println("Give me the radius of your base please. ");
                     while(!side_1.hasNextDouble()){
@@ -135,7 +141,7 @@ public class Shapesin3D{
                     System.out.printf("The Surface area of your cube is: " + "%.2f", Cylthing.getSurfaceArea());
                     System.out.printf("%n"+"The Volume of your cube is: "+ "%.2f", Cylthing.getVolume());
                     
-                    
+                    //getting input if the user wants to rerun the program
                     System.out.printf("%n"+"would you like to run this again? "+ "%n" + " Yes"+ "%n" + " No"+ "%n");
                     while(!run.hasNext()){
                     run.next();
